@@ -13,9 +13,21 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {
+                // TODO: ロジックは後続対応
+                executeC()
+            }, label: {
+                Text("Cを実行する")
+            })
         }
         .padding()
+    }
+    
+    private func executeB() {
+        print("Bを実行しました！")
+    }
+    private func executeC() {
+        print("Cを実行しました！")
     }
 }
 
