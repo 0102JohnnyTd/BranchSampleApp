@@ -15,11 +15,16 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Button(action: {
                 // TODO: ロジックは後続対応
+                executeB()
             }, label: {
                 Text("Bを実行する")
             })
         }
         .padding()
+    }
+    
+    private func executeB() {
+        print("Bを実行しました！")
     }
 }
 
