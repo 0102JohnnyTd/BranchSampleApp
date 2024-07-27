@@ -13,7 +13,11 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {
+                // TODO: ロジックは後続対応
+            }, label: {
+                Text("Bを実行する")
+            })
         }
         .padding()
     }
