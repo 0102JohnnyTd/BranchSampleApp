@@ -15,9 +15,9 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Button(action: {
                 // TODO: ロジックは後続対応
-                executeB()
+                executeC()
             }, label: {
-                Text("Bを実行する")
+                Text("Cを実行する")
             })
         }
         .padding()
@@ -25,6 +25,9 @@ struct ContentView: View {
     
     private func executeB() {
         print("Bを実行しました！")
+    }
+    private func executeC() {
+        print("Cを実行しました！")
     }
 }
 
